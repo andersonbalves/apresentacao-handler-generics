@@ -8,7 +8,8 @@ import lombok.RequiredArgsConstructor;
 @Builder
 @RequiredArgsConstructor
 public class CalculadoraDTO {
-    private final Integer a;
-    private final Integer b;
-    private final String operador;
+
+  private final Integer a;
+  private final Integer b;
+  private final String operador;
 }
