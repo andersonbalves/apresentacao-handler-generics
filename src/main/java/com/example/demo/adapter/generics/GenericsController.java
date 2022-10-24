@@ -3,6 +3,7 @@ package com.example.demo.adapter.generics;
 import com.example.demo.adapter.generics.model.GenericsRequest;
 import com.example.demo.adapter.generics.model.GenericsResponse;
 import com.example.demo.service.generics.Generics;
+import com.example.demo.service.generics.model.Request;
 import com.example.demo.service.generics.model.Response;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -17,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class GenericsController {
 
-  private final Generics<GenericsRequest, GenericsResponse> service;
+  private final Generics service;
 
   @GetMapping("/generics")
   @ResponseStatus(HttpStatus.OK)
